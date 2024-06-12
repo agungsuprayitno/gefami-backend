@@ -10,15 +10,19 @@ NestJs Example using postgres database and Typescript.
 ```bash
 $ npm install
 
-$ npx migrate dev --name migrate_tables
 ```
-next, create .env file:
+### next, create .env file:
 
 then set variable "DATABASE_URL" and "JWT_SECRET"
   For example, 
   - DATABASE_URL="postgresql://postgres:@{HOST}:{PORT}/{DATABASE}?schema={SCHEMA}"
   - JWT_SECRET="Abcdefghijklmnopqrstuvwxyz"
 
+### next, migrate database
+
+```bash
+$ npx migrate dev --name migrate_tables
+```
 
 ## Running the app
 
