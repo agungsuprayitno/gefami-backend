@@ -1,9 +1,9 @@
 
-NestJs Example.
+NestJs Example using postgres database.
 
 ## Description
 
-NestJs Example using Typescript.
+NestJs Example using postgres database and Typescript.
 
 ## Installation
 
@@ -12,6 +12,13 @@ $ npm install
 
 $ npx migrate dev --name migrate_tables
 ```
+next, create .env file:
+
+then set variable "DATABASE_URL" and "JWT_SECRET"
+  For example, 
+  - DATABASE_URL="postgresql://postgres:@{HOST}:{PORT}/{DATABASE}?schema={SCHEMA}"
+  - JWT_SECRET="Abcdefghijklmnopqrstuvwxyz"
+
 
 ## Running the app
 
